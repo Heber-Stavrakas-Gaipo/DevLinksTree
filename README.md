@@ -49,4 +49,7 @@ Esse projeto está sob a licença MIT.
 
 ---
 
+### OBS:
+O estágio atual do projeto exemplifica a plena execução do que foi visto nas aulas do curso. Em breve pretendo enriquecê-lo mais e adicionar minha identidade visual e assinatura.
+
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
