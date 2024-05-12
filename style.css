@@ -134,11 +134,18 @@ ul li a:hover {
 }
 
 #social-links {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px 0;
   font-size: 24px;
+}
+
+#octocat {
+  position: absolute;
+  right: -10px;
+  max-height: 5em;
 }
 
 #social-links a {
@@ -163,10 +170,6 @@ footer {
   padding-bottom: 24px;
   text-align: center;
   font-size: 14px;
-}
-
-footer #octocat {
-  max-height: 8em;
 }
 
 @media (min-width: 700px) {
