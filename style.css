@@ -6,28 +6,35 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: radial-gradient(at 89% 20%, rgb(130, 0, 255) 0, transparent 81%),
+    radial-gradient(at 39% 79%, rgb(30, 58, 138) 0, transparent 91%),
+    radial-gradient(at 50% 50%, rgb(0, 0, 0) 0, transparent 82%),
+    radial-gradient(at 15% 93%, rgb(248, 0, 198) 0, transparent 85%),
+    radial-gradient(at 94% 75%, rgb(76, 29, 149) 0, transparent 78%),
+    radial-gradient(at 100% 0%, rgb(112, 112, 112) 0, transparent 55%),
+    radial-gradient(at 0% 0%, rgb(0, 0, 85) 0, transparent 85%);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --profile-border: rgb(30, 58, 138);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: radial-gradient(at right bottom, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --profile-border: rgb(249, 168, 212);
 }
 
 body {
   background: var(--bg-url);
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-blend-mode: multiply;
   background-size: cover;
   height: 100%;
 }
@@ -51,6 +58,9 @@ body * {
 
 #profile img {
   border-radius: 100%;
+  box-sizing: content-box;
+  padding: 0.2rem;
+  border: 5px solid var(--profile-border);
   width: 112px;
 }
 
@@ -181,7 +191,7 @@ footer {
   font-size: 14px;
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
@@ -189,7 +199,7 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
-}
+} */
 
 @keyframes slide-in {
   from {
