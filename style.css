@@ -12,7 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
-  --profile-border: rgb(100, 0, 0);
+  --profile-border: rgb(209, 213, 219);
 }
 
 .light {
@@ -23,7 +23,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
-  --profile-border: rgb(255, 160, 122);
+  --profile-border: rgb(55, 65, 81);
 }
 
 body {
@@ -147,18 +147,6 @@ ul li a:hover {
   font-size: 24px;
 }
 
-#octocat {
-  position: absolute;
-  right: 75px;
-  bottom: -20px;
-  max-height: 5em;
-  animation: octocat-slide-back 0.4s forwards;
-}
-
-.light #octocat {
-  animation: octocat-slide-in 0.4s forwards;
-}
-
 #social-links a {
   display: flex;
   align-items: center;
@@ -182,6 +170,18 @@ footer {
   padding-bottom: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#color_tree {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
 }
 
 /* @media (min-width: 700px) {
@@ -209,33 +209,5 @@ footer {
   }
   to {
     left: 0;
-  }
-}
-
-@keyframes octocat-slide-in {
-  0% {
-    right: 75px;
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    right: -80px;
-    opacity: 1;
-  }
-}
-
-@keyframes octocat-slide-back {
-  0% {
-    right: -75px;
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    right: 65px;
-    opacity: 1;
   }
 }
